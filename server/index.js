@@ -7,6 +7,9 @@ require("dotenv").config();
 
 const app = express();
 
+// Serve static files from the 'dist' directory
+app.use(express.static('dist'));
+// comment for update
 const port = process.env.PORT || 5001;
 
 mongoose
